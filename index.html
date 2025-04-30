@@ -7,14 +7,20 @@
   <link rel="icon" href="TP813-logo.ico" type="image/x-icon">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: Arial, sans-serif; background-color: #f4f4f4; line-height: 1.6; }
-    nav { background-color: #333; color: white; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; }
-    nav a { color: white; text-decoration: none; margin: 0 10px; font-weight: bold; }
-    nav stripe-buy-button { margin-left: auto; }
-    main { max-width: 900px; margin: 40px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    footer { text-align: center; font-size: 0.9em; color: #888; padding: 30px 0; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; line-height: 1.6; color: #333; }
+    nav { background-color: #222; color: white; display: flex; justify-content: space-between; align-items: center; padding: 14px 24px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: 600; transition: color 0.3s ease; }
+    nav a:hover { color: #ffcc00; }
+    main { max-width: 960px; margin: 40px auto; padding: 30px 20px; background: white; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+    header { text-align: center; margin-bottom: 30px; }
+    header img { max-width: 180px; height: auto; border-radius: 10px; }
+    header h1 { font-size: 2.2rem; margin-top: 15px; color: #222; }
+    .description { font-size: 1.1rem; color: #666; }
+    section.contact { text-align: center; margin-top: 50px; }
+    section.contact h2 { font-size: 1.6rem; margin-bottom: 10px; }
+    section.contact p { margin: 8px 0; font-size: 1rem; }
+    footer { text-align: center; font-size: 0.9em; color: #777; padding: 30px 0; margin-top: 60px; border-top: 1px solid #ddd; background-color: #fafafa; }
   </style>
-  <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 </head>
 <body>
 
@@ -23,20 +29,16 @@
     <a href="index.html">Home</a>
     <a href="form.html">Form</a>
   </div>
-  <stripe-buy-button
-    buy-button-id="buy_btn_1RJKaaFEcPEGHd7tPHVeuES6"
-    publishable-key="pk_live_51RJJ2oFEcPEGHd7t0CVRNodwfA1koNAp84gEMl4S373PR8nOZFREY8iLHky3lhLeHoeEQZ5pIAToxkRXQ7sEp7YX00Hfjp0wej">
-  </stripe-buy-button>
 </nav>
 
 <main>
-  <header style="text-align: center;">
-    <img src="TP813-logo.png" alt="Tampa Print 813 Logo" style="max-width: 200px; height: auto;">
+  <header>
+    <img src="TP813-logo.png" alt="Tampa Print 813 Logo">
     <h1>Tampa Print 813</h1>
     <p class="description">We specialize in custom T-shirt printing, delivering high-quality garments quickly and affordably.</p>
   </header>
 
-  <section class="contact" style="text-align: center; margin-top: 40px;">
+  <section class="contact">
     <h2>Contact Us</h2>
     <p>Email: <a href="mailto:tmpprint813@gmail.com">tmpprint813@gmail.com</a></p>
     <p>Phone: <a href="tel:8133204348">(813) 320-4348</a></p>
