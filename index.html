@@ -17,9 +17,14 @@
     header h1 { font-size: 2.2rem; margin-top: 15px; color: #222; }
     .description { font-size: 1.1rem; color: #666; }
     .logo-marquee { margin: 50px auto; padding: 20px 0; overflow: hidden; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; background-color: #fff; position: relative; }
+    .scrolling-logos-wrapper {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
     .scrolling-logos {
       display: flex;
-      animation: scroll 3.33s linear infinite; /* 3x faster than 10s */
+      animation: scroll 33s linear infinite;
       align-items: center;
       width: max-content;
     }
@@ -62,15 +67,17 @@
 
   <div class="logo-marquee">
     <center><h3>Businesses who love our services</h3></center>
-    <div class="scrolling-logos">
-      <img src="metro-by-t-mobile-2020-seeklogo-WHITE2.png" alt="Metro by T-Mobile">
-      <img src="MICHIGAN_FURNITURE_CITI-LOGO-front.png" alt="Michigan Furniture Citi">
-      <img src="Shine All Logo for site.png" alt="SHINE ALL">
-      <img src="amana group logo for site.png" alt="AMANA GROUP">
-      <img src="metro-by-t-mobile-2020-seeklogo-WHITE2.png" alt="Metro by T-Mobile Duplicate">
-      <img src="MICHIGAN_FURNITURE_CITI-LOGO-front.png" alt="Michigan Furniture Citi Duplicate">
-      <img src="Shine All Logo for site.png" alt="SHINE ALL Duplicate">
-      <img src="amana group logo for site.png" alt="AMANA GROUP Duplicate">
+    <div class="scrolling-logos-wrapper">
+      <div class="scrolling-logos">
+        <img src="metro-by-t-mobile-2020-seeklogo-WHITE2.png" alt="Metro by T-Mobile">
+        <img src="MICHIGAN_FURNITURE_CITI-LOGO-front.png" alt="Michigan Furniture Citi">
+        <img src="Shine All Logo for site.png" alt="SHINE ALL">
+        <img src="amana group logo for site.png" alt="AMANA GROUP">
+        <img src="metro-by-t-mobile-2020-seeklogo-WHITE2.png" alt="Metro by T-Mobile Duplicate">
+        <img src="MICHIGAN_FURNITURE_CITI-LOGO-front.png" alt="Michigan Furniture Citi Duplicate">
+        <img src="Shine All Logo for site.png" alt="SHINE ALL Duplicate">
+        <img src="amana group logo for site.png" alt="AMANA GROUP Duplicate">
+      </div>
     </div>
   </div>
 </main>
